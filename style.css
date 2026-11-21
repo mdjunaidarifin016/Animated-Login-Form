@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Redaction 10", serif;
+}
+body,html{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(to right , #99004d 0% , #fe0080 100%);
+}
+.container{
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    max-width:350px ;
+    width: 100%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+.container form .title{
+    /* font-family: "Arimo", sans-serif; */
+    font-size: 30px;
+    font-weight: 600;
+    margin: 22px 0;
+    position: relative;
+}
+.container form .title::before{
+    content: '';
+    width: 33px;
+    position: absolute;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right , #99004d 0% , #fe0080 100%);
+}
+.container form .input-box{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    position: relative;
+}
+.container form .input-box input{
+    font-family: "Arimo", sans-serif;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+.container form .input-box .underline::before{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: lightgray;
+}
+.container form .input-box .underline::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 4px;
+    transform: scaleX(0);
+    background: linear-gradient(to right , #99004d 0% , #fe0080 100%);
+    transition: all 0.3s ease;
+    transform-origin: left;
+}
+.container form .input-box input:focus ~ .underline::after,
+.container form .input-box input:valid ~ .underline::after{
+    transform: scaleX(1);
+}
+.container form .button input{
+    color: #fff;
+    background: linear-gradient(to right , #99004d 0% , #fe0080 100%);
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+.container form .button input:hover{
+    background: linear-gradient(to left , #99004d 0% , #fe0080 100%);
+    letter-spacing: 1px;
+}
+.container .social-media .text{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px ;
+    margin-bottom: 16px;
+}
+.container .social-media a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+.container .social-media .twitter{
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+    background:linear-gradient(to right , #19bdff 0%,#01adef 100%);
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
+.container .social-media .twitter:hover{
+    background:linear-gradient(to left , #19bdff 0%,#01adef 100%);
+}
+.container .social-media .facebook{
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+    background:linear-gradient(to right , #466ab7 0%,#3b599e 100%);
+    border-radius: 5px;
+}
+.container .social-media .facebook:hover{
+    background:linear-gradient(to left , #466ab7 0%,#3b599e 100%);
+}
