@@ -39,7 +39,7 @@ animated-login-form/
 1. Clone this repository:
 
    ```bash
-   git clone YOUR_REPOSITORY_URL
+   [git clone YOUR_REPOSITORY_URL](https://github.com/mdjunaidarifin016/Animated-Login-Form.git)
    ```
 
 2. Open the project folder.
